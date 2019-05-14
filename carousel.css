@@ -1,0 +1,34 @@
+.caritem{
+  width: 100px;
+  height :100px;
+  position: absolute;
+  left: 10px;
+  top:10px;
+  opacity: 0;
+  transition: all ease 1s;
+  display: none;
+}
+
+#carousel{
+  background-color: blue;
+  width: 150px;
+  height: 30px;
+  position: static;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.gray{
+  background-color: gray;
+}
+
+.visible{
+  opacity: 1;
+  display: block;
+}
