@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="carousel.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <div id="carousel">
+    <div class="caritem yellow" id="ok">1</div>
+    <div class="caritem red">2</div>
+    <div class="caritem gray">3</div>
+    <div onclick="cycle()" id="zahl" style="width: 100px; height: 100px; margin-top: 200px; background-color: lightblue"></div>
+  </div>
+
+
+  </body>
+  <script>
+
+    var i = 1;
+    var caritems = document.getElementsByClassName("caritem");
+
+    caritems[0].classList.add("visible");
+
+    function cycle(){
+
+      for (x = 0; x < caritems.length; x++) {
+         caritems[x].classList.remove("visible");
+         }
+
+      if (i==caritems.length){
+        i=0;
+      }else{}
+
+      caritems[i].classList.add("visible");
+      i++;
+
+      }
+
+  </script>
+</html>
